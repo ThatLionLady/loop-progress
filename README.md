@@ -2,7 +2,6 @@
  
 This script is for monitoring the progress of a for loop that otherwise doesn't have any terminal output to tell you where your analysis is at.
 
-- [ThatLionLady's Loop-Progress](#thatlionladys-loop-progress)
 - [Installation](#installation)
 - [Requirements](#requirements)
 - [Usage](#usage)
