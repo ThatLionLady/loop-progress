@@ -52,8 +52,7 @@ If you want to see what it looks like before you commit to putting it into your 
 - Run the `test.sh` script from the loop-progress directory. 
   - It should look like this:
 
-
-
+![Alt Text](test.gif)
 
 # Detailed Description
 
