@@ -28,8 +28,8 @@ git clone https://github.com/ThatLionLady/loop-progress.git
 
 The `loop-progress.sh` script should be called twice within the your script.  
 (*See [Detailed Description](#detailed-description) for the explanation why.*)
-1. outside the for loop
-2. instide the for loop
+1. outside the for loop calling your list
+2. inside the for loop calling x
 
 Your *very simplified* script should look something like this:
 
@@ -41,14 +41,16 @@ LIST=Path/to/Your.list
 bash loop-progress.sh ${LIST}
 
 for THING in $(<${LIST}); do
-	sleep 1
+	command
 	bash loop-progress.sh x
 done
 ```
 
 # Testing Testing 1, 2, 3
 
-Run the `test.sh` script from the loop-progress directory. It should look like this:
+If you want to see what it looks like before you commit to putting it into your own script:
+- Run the `test.sh` script from the loop-progress directory. 
+  - It should look like this:
 
 
 
