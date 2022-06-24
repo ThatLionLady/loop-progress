@@ -85,7 +85,7 @@ This script should be called twice within the your script.
 
 2. The second occurrence is inside the for loop calling "x".
    - This calls a function that starts by sourcing the progress number in a temporary file calculated during the previous call.
-   - This will run through as part of your for loop until the progress reaches "0" and it it congratulates you that your for loop is complete.
+   - This will run through as part of your for loop until the progress reaches "0" and it congratulates you that your for loop is complete.
         - Your script:
   
         ```sh
