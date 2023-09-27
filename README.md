@@ -18,8 +18,10 @@ Clone it!
 git clone https://github.com/ThatLionLady/loop-progress.git
 cd loop-progress
 chmod +x loop-progress.sh
-ln -s loop-progress.sh /usr/local/bin/loop-progress
+ln -s loop-progress.sh /usr/local/bin/loop-progress #*
 ```
+
+**Creating the symbolic link to your local bin may require superuser permission (ie use `sudo`).*
 
 # Requirements
 
