@@ -2,6 +2,7 @@
  
 This script is for monitoring the progress of a for loop that otherwise doesn't have any terminal output to tell you where your analysis is at.
 
+- [ThatLionLady's Loop-Progress](#thatlionladys-loop-progress)
 - [Installation](#installation)
 - [Requirements](#requirements)
 - [Usage](#usage)
@@ -15,6 +16,9 @@ Clone it!
 
 ```sh
 git clone https://github.com/ThatLionLady/loop-progress.git
+cd loop-progress
+chmod +x loop-progress.sh
+ln -s loop-progress.sh /usr/local/bin/loop-progress
 ```
 
 # Requirements
@@ -37,11 +41,11 @@ Your *very simplified* script should look something like this:
 
 LIST=Path/to/Your.list
 
-bash loop-progress.sh ${LIST}
+loop-progress ${LIST}
 
 for THING in $(<${LIST}); do
 	command
-	bash loop-progress.sh x
+	loop-progress x
 done
 ```
 
@@ -65,7 +69,7 @@ This script should be called twice within the your script.
 
         LIST=Path/to/Your.list
 
-        bash loop-progress.sh ${LIST}
+        loop-progress ${LIST}
         ```
         - This script:
 
@@ -90,7 +94,7 @@ This script should be called twice within the your script.
         ```sh
         for THING in $(<${LIST}); do
 	        command
-	        bash loop-progress.sh x
+	        loop-progress x
         done
         ```
 

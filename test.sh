@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 LIST=test.list
 
-bash loop-progress.sh ${LIST}
+loop-progress ${LIST}
 
 for THING in $(<${LIST}); do
 	sleep 1
-	bash loop-progress.sh x
+	loop-progress x
 done
 
