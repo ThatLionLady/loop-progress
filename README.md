@@ -31,7 +31,7 @@ ln -s loop-progress.sh /usr/local/bin/loop-progress #*
 
 # Usage
 
-The `loop-progress.sh` script should be called twice within the your script.  
+The `loop-progress` script should be called twice within the your script.  
 (*See [Detailed Description](#detailed-description) for the explanation why.*)
 1. outside the for loop calling your list
 2. inside the for loop calling x
