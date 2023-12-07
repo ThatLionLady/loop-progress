@@ -49,6 +49,8 @@ for THING in $(<${LIST}); do
 	command
 	loop-progress x
 done
+
+rm progress.tmp
 ```
 
 # Testing Testing 1, 2, 3
